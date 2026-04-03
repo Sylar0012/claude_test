@@ -1,1 +1,0 @@
-- [PrimeVue 규칙 준수](feedback_primevue_rules.md) — HTML 기본 태그 대신 PrimeVue 컴포넌트 사용 필수
