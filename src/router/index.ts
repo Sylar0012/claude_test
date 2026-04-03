@@ -12,6 +12,11 @@ const routes: RouteRecordRaw[] = [
     name: 'Main',
     component: () => import('../views/MainView.vue'),
   },
+  {
+    path: '/find-password',
+    name: 'FindPassword',
+    component: () => import('../views/FindPasswordView.vue'),
+  },
 ]
 
 const router = createRouter({
