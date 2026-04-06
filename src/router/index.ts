@@ -3,19 +3,25 @@ import type { RouteRecordRaw } from 'vue-router'
 
 const routes: RouteRecordRaw[] = [
   {
-    path: '/',
+    path: '/login',
     name: 'Login',
     component: () => import('../views/LoginView.vue'),
-  },
-  {
-    path: '/main',
-    name: 'Main',
-    component: () => import('../views/MainView.vue'),
   },
   {
     path: '/find-password',
     name: 'FindPassword',
     component: () => import('../views/FindPasswordView.vue'),
+  },
+  {
+    path: '/',
+    component: () => import('../layouts/DefaultLayout.vue'),
+    children: [
+      {
+        path: '',
+        name: 'Main',
+        component: () => import('../views/MainView.vue'),
+      },
+    ],
   },
 ]
 

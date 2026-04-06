@@ -7,7 +7,7 @@ const username = ref('')
 const password = ref('')
 
 function handleLogin(): void {
-  router.push('/main')
+  router.push('/')
 }
 
 function goToFindPassword(): void {
